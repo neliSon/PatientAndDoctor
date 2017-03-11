@@ -7,11 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+//#import "Doctor.h"
+@class Doctor;
 
-@interface Patient : NSObject
+@interface Patient : NSObject {
+    Doctor *doctor;
+}
 
 @property (nonatomic) NSString *firstName;
 @property (nonatomic) NSString *lastName;
 @property (nonatomic) int age;
+@property (nonatomic) BOOL hasValidHealthCard;
+
+-(instancetype)initWithFirstName: (NSString *) firstName andLastName: (NSString *) lastName andAge: (int) age andHasValidHealthCard: (BOOL) isValid;
+-(void)visitDoctor: (Doctor*) doctor;
 
 @end

@@ -7,10 +7,11 @@
 //
 
 #import "Doctor.h"
+#import "Patient.h"
 
 @implementation Doctor
 
-- (instancetype)initWithFirstName: (NSString *) firstName lastName: (NSString *) lastName andSpecialization: (NSString *) specialization
+- (instancetype)initWithFirstName: (NSString *) firstName andLastName: (NSString *) lastName andSpecialization: (NSString *)specialization
 {
     self = [super init];
     if (self) {
@@ -19,6 +20,15 @@
         _specialization = specialization;
     }
     return self;
+}
+
+-(void)reviewPatient:(Patient *)patient {
+    if (patient.hasValidHealthCard == YES) {
+        // accept patient.
+        NSLog(@"Dr. %@ has accepted %@", self.lastName, patient.firstName);
+    } else {
+        NSLog(@"Patient, %@, must present valid health card.", patient.firstName);
+    }
 }
 
 @end
