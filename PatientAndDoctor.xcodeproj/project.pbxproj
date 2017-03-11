@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1BA004E01E748FA600711537 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA004DF1E748FA600711537 /* main.m */; };
+		1BA004E81E7490D100711537 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA004E71E7490D100711537 /* Patient.m */; };
+		1BA004EB1E7490DB00711537 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA004EA1E7490DB00711537 /* Doctor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		1BA004DC1E748FA600711537 /* PatientAndDoctor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PatientAndDoctor; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA004DF1E748FA600711537 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1BA004E61E7490D100711537 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		1BA004E71E7490D100711537 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		1BA004E91E7490DB00711537 /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		1BA004EA1E7490DB00711537 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				1BA004DF1E748FA600711537 /* main.m */,
+				1BA004E61E7490D100711537 /* Patient.h */,
+				1BA004E71E7490D100711537 /* Patient.m */,
+				1BA004E91E7490DB00711537 /* Doctor.h */,
+				1BA004EA1E7490DB00711537 /* Doctor.m */,
 			);
 			path = PatientAndDoctor;
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA004E01E748FA600711537 /* main.m in Sources */,
+				1BA004E81E7490D100711537 /* Patient.m in Sources */,
+				1BA004EB1E7490DB00711537 /* Doctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
