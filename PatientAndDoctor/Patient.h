@@ -14,10 +14,10 @@
     Doctor *doctor;
 }
 
-@property (nonatomic) NSString *firstName;
-@property (nonatomic) NSString *lastName;
-@property (nonatomic) int age;
-@property (nonatomic) BOOL hasValidHealthCard;
+@property (nonatomic, strong) NSString *firstName;
+@property (nonatomic, strong) NSString *lastName;
+@property (nonatomic, assign) int age;
+@property (nonatomic, assign) BOOL hasValidHealthCard;
 
 -(instancetype)initWithFirstName: (NSString *) firstName andLastName: (NSString *) lastName andAge: (int) age andHasValidHealthCard: (BOOL) isValid;
 -(void)visitDoctor: (Doctor*) doctor;
