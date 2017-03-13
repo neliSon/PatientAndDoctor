@@ -20,6 +20,7 @@
         _age = age;
         _hasValidHealthCard = hasValidCard;
         _symptoms = [NSMutableSet setWithObjects:@"infection", @"failing", nil];
+        _prescribedDrugs = [NSMutableSet set];
     }
     return self;
 }
