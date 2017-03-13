@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSString *lastName;
 @property (nonatomic, assign) int age;
 @property (nonatomic, assign) BOOL hasValidHealthCard;
-@property (nonatomic, strong) NSString *symptom;
+@property (nonatomic, strong) NSMutableSet *symptoms;
 
 -(instancetype)initWithFirstName: (NSString *) firstName andLastName: (NSString *) lastName andAge: (int) age andHasValidHealthCard: (BOOL) hasValidCard;
 

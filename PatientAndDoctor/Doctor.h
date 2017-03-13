@@ -26,6 +26,6 @@
 
 -(instancetype)initWithFirstName: (NSString *) firstName andLastName: (NSString *) lastName andSpecialization: (NSString *) specialization;
 -(void)reviewPatient: (Patient *) patient;
--(NSString *)prescribeDrug: (Patient *) patient;
+-(void)prescribeDrug: (Patient *) patient;
 
 @end

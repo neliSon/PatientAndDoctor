@@ -19,7 +19,7 @@
         _lastName = lastName;
         _age = age;
         _hasValidHealthCard = hasValidCard;
-        _symptom = @"failing";
+        _symptoms = [NSMutableSet setWithObjects:@"infection", @"failing", nil];
     }
     return self;
 }
@@ -37,15 +37,7 @@
 }
 
 -(void)requestMedication:(Doctor *)doctor {
-    // only patients who have been accepted by the doctor can ask for medication.
-    if ([doctor.acceptedPatients containsObject:self]) {
-        // request med.
-        NSString *drug = [doctor prescribeDrug:self];
-        NSLog(@"Dr. %@ has prescribed %@ for %@.", doctor.lastName, drug, self.firstName);;
-    } else {
-        // declined.
-        NSLog(@"Dr. %@ has declined prescriptions.", doctor.lastName);
-    }
+    [doctor prescribeDrug:self];
 }
 
 
