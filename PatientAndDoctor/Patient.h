@@ -7,19 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "Doctor.h"
+#import "PatientDelegate.h"
+
 @class Doctor;
 
-@interface Patient : NSObject {
-    Doctor *doctor;
-}
+@interface Patient : NSObject <PatientDelegate>     // STEP THREE: DECLARE CONFORMANCE TO PROTOCOL.
 
 @property (nonatomic, strong) NSString *firstName;
 @property (nonatomic, strong) NSString *lastName;
 @property (nonatomic, assign) int age;
 @property (nonatomic, assign) BOOL hasValidHealthCard;
+@property (nonatomic, strong) NSString *symptom;
 
--(instancetype)initWithFirstName: (NSString *) firstName andLastName: (NSString *) lastName andAge: (int) age andHasValidHealthCard: (BOOL) isValid;
--(void)visitDoctor: (Doctor*) doctor;
+-(instancetype)initWithFirstName: (NSString *) firstName andLastName: (NSString *) lastName andAge: (int) age andHasValidHealthCard: (BOOL) hasValidCard;
+
 
 @end

@@ -13,11 +13,12 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        Patient *bob = [[Patient alloc] initWithFirstName:@"Bob" andLastName:@"Builder" andAge:32 andHasValidHealthCard:NO];
+        Patient *bob = [[Patient alloc] initWithFirstName:@"Bob" andLastName:@"Builder" andAge:32 andHasValidHealthCard:YES];
         
         Doctor *pat = [[Doctor alloc] initWithFirstName:@"Patrick" andLastName:@"Star" andSpecialization:@"Rocktherapy"];
         
         [bob visitDoctor:pat];
+        [bob requestMedication:pat];
     }
     return 0;
 }
